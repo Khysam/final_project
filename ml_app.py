@@ -5,7 +5,7 @@ import joblib
 import os
 
 # Load model dan preprocessing
-model = joblib.load("laptop_price_model.pkl")
+model = joblib.load("best_regression_model.pkl")
 scaler = joblib.load("scaler.pkl")
 encoders = joblib.load("encoders.pkl")
 
