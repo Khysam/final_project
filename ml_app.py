@@ -7,7 +7,7 @@ import os
 # Load model dan preprocessing
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model = joblib.load(os.path.join(BASE_DIR, "laptop_price_model.pkl"))
+model = joblib.load(os.path.join(BASE_DIR, "best_regression_model.pkl"))
 scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
 encoders = joblib.load(os.path.join(BASE_DIR, "encoders.pkl"))
 
