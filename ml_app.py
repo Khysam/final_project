@@ -5,9 +5,11 @@ import joblib
 import os
 
 # Load model dan preprocessing
-model = joblib.load("best_regression_model.pkl")
-scaler = joblib.load("scaler.pkl")
-encoders = joblib.load("encoders.pkl")
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, "laptop_price_model.pkl"))
+scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
+encoders = joblib.load(os.path.join(BASE_DIR, "encoders.pkl"))
 
 def run_ml_app():
     st.title("💻 Prediksi Harga Laptop")
